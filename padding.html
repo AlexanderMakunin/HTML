@@ -5,24 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de CSS: Margin, Padding, Border</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            margin: 40px; /* Espacio exterior (color de fondo para visualización) */
+            background-color: #f0f0f0; /* Color del margen */
+        }
+
         .marco {
-            margin: 200px solid #4543ac; /* Espacio exterior */
-            padding: 200px  solid #1256gf; /* Espacio interior */
-            border: 50px solid #3498db; /* Borde azul */
-            background-color: #fff; /* Fondo blanco */
+            padding: 20px; /* Espacio interior (color de fondo para visualización) */
+            background-color: #fff; /* Fondo blanco para el contenido */
+            border: 5px solid #3498db; /* Borde azul */
             width: 300px; /* Ancho del marco */
             height: 200px; /* Alto del marco */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efecto visual */
+            position: relative; /* Necesario para el pseudo-elemento */
+        }
+
+        .margin-indicator {
+            position: absolute;
+            top: -40px; /* Para que se vea arriba del marco */
+            left: -40px; /* Para que se vea a la izquierda del marco */
+            right: -40px; /* Para que se vea a la derecha del marco */
+            bottom: -40px; /* Para que se vea debajo del marco */
+            background-color: rgba(255, 0, 0, 0.3); /* Color del margen (rojo semitransparente) */
+            z-index: -1; /* Detrás del marco */
+        }
+
+        .padding-indicator {
+            padding: 20px; /* Espacio interior */
+            background-color: rgba(0, 255, 0, 0.3); /* Color del padding (verde semitransparente) */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1; /* Detrás del contenido */
         }
     </style>
 </head>
 <body>
     <h1>Ejemplo de CSS</h1>
-    <p>Este ejemplo ilustra el uso de margin, padding, border, width y height.</p>
+    <p>Este ejemplo ilustra el uso de margin, padding, border, width y height con colores visibles.</p>
     
-    <div class="marco">
-        <h2>Contenido dentro del marco</h2>
-        <p>Este es un ejemplo de cómo se aplica padding (espacio interior), margin (espacio exterior) y border (borde) en CSS.</p>
+    <div class="container">
+        <div class="marco">
+            <div class="margin-indicator"></div>
+            <div class="padding-indicator"></div>
+            <h2>Contenido dentro del marco</h2>
+            <p>Este es un ejemplo de cómo se aplica padding (espacio interior), margin (espacio exterior) y border (borde) en CSS.</p>
+        </div>
     </div>
 </body>
 </html>
