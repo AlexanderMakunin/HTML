@@ -41,6 +41,12 @@
             bottom: 0;
             z-index: -1; /* Detrás del contenido */
         }
+        .ActualContent-Indicator{
+            background-color: red;
+        }
+        .border-indicator{
+            background-color: blue;
+        }
     </style>
 </head>
 <body>
@@ -50,9 +56,9 @@
     <div class="container">
         <div class="marco">
             <div class="margin-indicator"></div>
+            <div class="border-indicator"></div>
             <div class="padding-indicator"></div>
-            <h2>Contenido dentro del marco</h2>
-            <p>Este es un ejemplo de cómo se aplica padding (espacio interior), margin (espacio exterior) y border (borde) en CSS.</p>
+            <h2 class="ActualContent-indicator">Contenido dentro del marco</h2>
         </div>
     </div>
 </body>
