@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de CSS: Margin, Padding, Border</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eaeaea;
-            margin: 0;
-            padding: 20px;
-        }
 
         .container {
             margin: 40px; /* Espacio exterior (color de fondo para visualización) */
@@ -23,7 +17,7 @@
             border: 5px solid #3498db; /* Borde azul */
             width: 300px; /* Ancho del marco */
             height: 200px; /* Alto del marco */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efecto visual */
+            box-shadow: 0 4px 10px rgba(0, 0, 30, 0.1); /* Sombra para efecto visual */
             position: relative; /* Necesario para el pseudo-elemento */
         }
 
@@ -33,13 +27,13 @@
             left: -40px; /* Para que se vea a la izquierda del marco */
             right: -40px; /* Para que se vea a la derecha del marco */
             bottom: -40px; /* Para que se vea debajo del marco */
-            background-color: rgba(255, 0, 0, 0.3); /* Color del margen (rojo semitransparente) */
+            background-color: rgba(255, 20, 0, 0.3); /* Color del margen (rojo semitransparente) */
             z-index: -1; /* Detrás del marco */
         }
 
         .padding-indicator {
             padding: 20px; /* Espacio interior */
-            background-color: rgba(0, 255, 0, 0.3); /* Color del padding (verde semitransparente) */
+            background-color: rgba(0, 255, 100, 0.3); /* Color del padding (verde semitransparente) */
             position: absolute;
             top: 0;
             left: 0;
