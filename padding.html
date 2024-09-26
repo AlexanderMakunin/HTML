@@ -4,51 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de CSS: Margin, Padding, Border</title>
-    <style>
-
-        .container {
-            border-color: purple;
-            background-color: purple;
+<style>
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 5px solid black;
+            margin: 20px;
+            padding: 15px;
         }
 
-        .marco {
-            border-color: rose;
-            background-color: rose;
+        .box1 {
+            background-color: lightblue;
         }
 
-        .margin-indicator {
-            border-color: yellow;
-            background-color: yellow;
+        .box2 {
+            background-color: lightgreen;
+            margin: 40px; /* más margen */
+            padding: 30px; /* más espacio dentro del cuadro */
         }
 
-        .padding-indicator {
-            border-color: green;
-            background-color: green;
-        }
-        .ActualContent-Indicator{
-            background-color: red;
-            background-color: red;
-        }
-        .border-indicator{
-            background-color: blue;
-            background-color: blue;
+        .box3 {
+            background-color: lightcoral;
+            margin: 10px; /* menos margen */
+            padding: 5px; /* menos espacio dentro del cuadro */
         }
     </style>
 </head>
 <body>
-    <h1>Ejemplo de CSS</h1>
-    <p>Este ejemplo ilustra el uso de margin, padding, border, width y height con colores visibles.</p>
-    
-    <div class="container">
-        <div class="marco">
-            <div class="margin-indicator">
-                <div class="border-indicator">
-                    <div class="padding-indicator">
-                        <h2 class="ActualContent-indicator">Contenido dentro del marco</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <h1>Ejemplos de CSS: Margin, Padding, Border, Width y Height</h1>
+
+    <div class="box box1">
+        <p>Cuadro con 20px de margen y 15px de padding.</p>
     </div>
+
+    <div class="box box2">
+        <p>Cuadro con 40px de margen y 30px de padding.</p>
+    </div>
+
+    <div class="box box3">
+        <p>Cuadro con 10px de margen y 5px de padding.</p>
+    </div>
+
 </body>
 </html>
