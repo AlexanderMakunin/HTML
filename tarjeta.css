@@ -9,8 +9,8 @@
     }
     .tarjeta div{
         border: 5px solid black;
-        margin: 50px;
-        padding: 100px;
+        margin: auto;
+        padding: auto;
         background-color: blue;
         border-radius: 30px;
     }
