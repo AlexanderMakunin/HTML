@@ -4,38 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de CSS: Margin, Padding, Border</title>
-<style>
-        .box1 {
-            border-color: lightblue;
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-
-        .box2 {
-            border-color: lightgreen;
-            margin: 10px;
+        .container {
+            background-color: #fff;
+            border: 1px solid #ccc;
             padding: 10px;
-        }
-
-        .box3 {
-            border-color: lightcoral;
-            margin: 10px; 
-            padding: 10px;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Ejemplos de CSS: Margin, Padding, Border, Width y Height</h1>
 
-    <div class="box box2">
-        <div class="box box3">
-            <div class="box box1">
-                    <p>prueba</p>
-            </div>
-        </div>
+    <h1>Conceptos Básicos de CSS</h1>
+
+    <div class="container">
+        <h2>CSS Margin</h2>
+        <p>
+            El <strong>margin</strong> (margen) se utiliza para crear espacio externo alrededor de un elemento. Se puede aplicar a todos los lados (superior, derecho, inferior e izquierdo) y se puede ajustar de forma individual. El margen no afecta el tamaño del elemento, sino que se añade fuera de su borde.
+        </p>
     </div>
 
+    <div class="container">
+        <h2>CSS Padding</h2>
+        <p>
+            El <strong>padding</strong> (relleno) se utiliza para crear espacio interno dentro de un elemento, entre su contenido y su borde. Al igual que el margen, el relleno puede ser ajustado en cada lado de manera independiente y afecta el tamaño total del elemento.
+        </p>
+    </div>
 
+    <div class="container">
+        <h2>CSS Border</h2>
+        <p>
+            El <strong>border</strong> (borde) es una línea que rodea el contenido de un elemento. Se puede personalizar en grosor, estilo y color. El borde se encuentra entre el margen y el relleno, y su tamaño afecta el tamaño total del elemento.
+        </p>
+    </div>
 
-
+    <div class="container">
+        <h2>CSS Width and Height</h2>
+        <p>
+            Las propiedades <strong>width</strong> (ancho) y <strong>height</strong> (alto) determinan el tamaño de un elemento. Se pueden establecer en valores fijos (como píxeles) o porcentuales. El tamaño total del elemento también se ve afectado por el padding y el border.
+        </p>
+    </div>
 
 </body>
 </html>
