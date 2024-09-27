@@ -4,7 +4,7 @@
         width: 800px;
         background-color: grey;
         position: absolute;
-        margin-align: center;
+        margin: center;
         display: flex;
     }
     .tarjeta div{
