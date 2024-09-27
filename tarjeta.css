@@ -1,9 +1,10 @@
     .tarjeta {
         border: 5px solid black;
-        height: 400px;
-        width: 600px;
+        height: 600px;
+        width: 800px;
         background-color: grey;
         position: absolute;
+        maring: auto;
     }
     .tarjeta div{
         margin: 50px;
