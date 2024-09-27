@@ -8,7 +8,7 @@
         display: flex;
     }
     .tarjeta div{
-        border: 5px solid black
+        border: 5px solid black;
         margin: 50px;
         padding: 100px;
         background-color: blue;
