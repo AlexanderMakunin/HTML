@@ -6,6 +6,7 @@
         position: absolute;
         margin: center;
         display: flex;
+        justify-content: center;
     }
     .tarjeta div{
         border: 5px solid black;
