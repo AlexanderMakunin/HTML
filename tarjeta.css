@@ -1,1 +1,13 @@
-asdf
+    .tarjeta {
+        border: 5px solid black;
+        height: 400px;
+        width: 600px;
+        background-color: grey;
+        position: absolute;
+    }
+    .tarjeta div{
+        margin: 50px;
+        padding: 150px;
+        background-color: blue;
+        border-radius: 30px;
+    }
